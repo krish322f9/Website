@@ -1,0 +1,159 @@
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000;
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #28b8ffff;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: center;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 15px;
+    font-weight: 500;
+}
+
+.hero {
+    padding: 0px 0px;
+    text-align: center;
+    background: #000000;
+}
+
+.hero h4 {
+    font-size: 1.0em;
+    color: #ffff;
+    margin-bottom: 0px;
+}
+
+.hero p {
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+section {
+    padding: 0px 30px;
+    max-width: 1000px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+h3 {
+    color: #28b8ffff;
+    font-size: 1.5em;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+h2 {
+    color: #28b8ffff;
+    font-size: 2em;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #000000
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 4px solid #28b8ffff;
+    font-size: 1em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.work {
+    background-color: #000000;
+    padding: 0px;
+    text-align: center;
+    border: 0px solid #000000;
+}
+
+#contact p {
+    text-align: center;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 0.9em;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+
+    header .logo {
+        margin-bottom: 0;
+    }
+
+    nav {
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+.work img {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+    border: 0px solid #333;
+    transition: transform 0.3s ease;
+}
+
+.work img:hover {
+    transform: scale(1);
+}
